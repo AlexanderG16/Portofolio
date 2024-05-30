@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="portofolio"
+        options={{
+          title: 'Portofolio',
+          tabBarIcon: ({ color, focused}) => (
+            <TabBarIcon name={focused ? 'code' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+        />
     </Tabs>
   );
 }
